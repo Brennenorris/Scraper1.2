@@ -11,6 +11,8 @@ try:
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--proxy-server=http://your_proxy_server:your_proxy_port')
     chrome_options.add_argument('--user-agent=Your-Random-User-Agent-String')
+    chrome_options.add_argument('--headless')
+
 
     # Specify path to ChromeDriver ---UPDATE
     chrome_driver_path = 'c:\\Users\\brenn\\OneDrive\\Desktop\\Void\\chromedriver.exe'
@@ -86,4 +88,3 @@ finally:
     if conn.is_connected():
         cursor.close()
         conn.close()
-gg
